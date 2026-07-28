@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>غرفة الدردشة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-page">
+    <div class="page-shell">
+        <header class="hero hero-wide">
+            <div>
+                <span class="eyebrow">غرفة الدردشة</span>
+                <h1>مرحبًا بك في صفحة الدردشة</h1>
+                <p>هذا المكان للتواصل باستخدام اسم المستخدم. يمكنك إرسال رسائل، تسجيل الخروج، والعودة متى شئت.</p>
+            </div>
+            <div class="hero-badge">دردشة مباشرة</div>
+        </header>
+
+        <main class="chat-grid">
+            <section class="card chat-card">
+                <div class="chat-meta">
+                    <p id="userStatus" class="chat-status"></p>
+                </div>
+                <div class="chat-window" id="chatWindow"></div>
+                <form id="chatForm" class="chat-form">
+                    <input type="text" id="chatInput" placeholder="اكتب رسالتك هنا..." autocomplete="off">
+                    <button type="submit">أرسل</button>
+                </form>
+                <button id="logoutBtn" class="ghost-btn" type="button">تسجيل الخروج</button>
+            </section>
+
+            <section class="card side-card">
+                <h2>المستخدمون المتصلون</h2>
+                <p>هذه قائمة الأسماء المسجلة في التطبيق. سيتم حفظها في المتصفح حتى بعد إغلاق الموقع.</p>
+                <ul id="chatUserList" class="user-list"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
