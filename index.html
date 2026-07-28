@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل دخول تواصل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell login-page">
+        <header class="hero hero-wide">
+            <div>
+                <span class="eyebrow">تطبيق التواصل</span>
+                <h1>سجل الدخول أو أنشئ حسابًا جديدًا</h1>
+                <p>استخدم اسم مستخدم فريد بدون رقم هاتف. البيانات محفوظة في المتصفح ولا تُمسح بعد الإغلاق.</p>
+            </div>
+            <div class="hero-badge">قاعدة بيانات محلية</div>
+        </header>
+
+        <main class="content-grid">
+            <section class="card auth-card">
+                <h2>ابدأ الآن</h2>
+                <p>أدخل اسم مستخدم واحد فقط للتسجيل أو تسجيل الدخول.</p>
+                <form id="authForm">
+                    <label for="username">اسم المستخدم</label>
+                    <input type="text" id="username" name="username" placeholder="مثال: user_name123" autocomplete="off">
+                    <div class="buttons-row">
+                        <button type="button" id="registerBtn">تسجيل جديد</button>
+                        <button type="button" id="loginBtn">تسجيل دخول</button>
+                    </div>
+                </form>
+                <p id="message" class="message"></p>
+            </section>
+
+            <section class="card info-card">
+                <h2>المستخدمون الحاليون</h2>
+                <p>هنا قائمة بكل الأسماء المسجلة حاليًا. يمكن تسجيل الدخول مباشرة إذا كان اسمك موجودًا.</p>
+                <ul id="userList" class="user-list"></ul>
+                <div class="note-box">
+                    <p>التخزين في <strong>localStorage</strong> يعني أن البيانات تبقى في المتصفح بعد إغلاق الموقع.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
